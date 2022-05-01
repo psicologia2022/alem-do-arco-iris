@@ -1,0 +1,14 @@
+// Sessao Sobre
+
+.s_sobre{
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    // padding: 100px 0;
+    background-color: #d04b36;
+    min-height: 100vh;
+}

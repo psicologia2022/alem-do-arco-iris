@@ -1,0 +1,236 @@
+
+/* SETUP */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* HEADER LOGO */
+
+header {
+  width: 100vw;
+
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+
+  background: linear-gradient(
+    180deg,
+    #fe0000 16.66%,
+    #fd8c00 16.66%,
+    33.32%,
+    #ffe500 33.32%,
+    49.98%,
+    #119f0b 49.98%,
+    66.64%,
+    #0644b3 66.64%,
+    83.3%,
+    #c22edc 83.3%
+  );
+
+  opacity: 0.7;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+
+
+
+}
+
+/* NAVIGATION BAR */
+
+.logo{
+  text-align: center;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 16px;
+
+  height: 3.5rem;
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* background: linear-gradient(180deg, #FE0000 16.66%,
+		#FD8C00 16.66%, 33.32%,
+		#FFE500 33.32%, 49.98%,
+		#119F0B 49.98%, 66.64%,
+		#0644B3 66.64%, 83.3%,
+		#C22EDC 83.3%); */
+  /* box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); */
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  gap: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  padding: 12px 0;
+  color: #fafafa;
+  cursor: pointer;
+  transition: all 0.325s ease-out;
+  font-weight: bold;
+
+  border-radius: 2px;
+
+  clip-path: polygon(10% 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+}
+
+.um {
+  background-color: #d04b36;
+}
+
+.dois {
+  background-color: #e36511;
+}
+
+.tres {
+  background-color: #eead2d;
+}
+
+.quatro {
+  background-color: #00b180;
+}
+
+.cinco {
+  background-color: #147aab;
+}
+
+.seis {
+  background-color: #675997;
+}
+
+
+// Container
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  z-index: 999;
+  position: relative;
+  padding: 0 30px;
+  overflow: hidden;
+  display: flex;
+}
+
+.center{
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-1150{
+  max-width: 1150px;
+}
+
+.wrap{
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.content{
+  border-radius: 8px;
+  width: 260px;
+  min-height: 360px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition: all 0.275s ease-out;
+  cursor: pointer;
+
+  &:hover{
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+}
+
+.img{
+    border-radius: 8px;
+    width: 260px;
+    min-height: 360px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-arte{
+    border-radius: 8px;
+    width: 500px;
+    min-height: 400px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+// Padroes de Texto
+
+.infos-section{
+    font-style: normal;
+    font-size: 18px;
+
+    h1{
+        font-size: 38px;
+        font-weight: 400;
+    }
+
+    h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    h3{
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    p{
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+
+    strong{
+        font-weight: bold;
+        font-style: normal;
+    }
+}
